@@ -4,31 +4,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const playOverElements = document.querySelectorAll(".imageButton .playOver");
 
     playButtons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            const songSrc = button.getAttribute("data-src");
-            if (!songSrc) return;
-            
-            const fullSrc = new URL(songSrc, window.location.href).href;
+        button.addEventListener("click", async () => {
 
-            if (audioPlayer.src !== fullSrc) {
-                audioPlayer.src = fullSrc;
-                audioPlayer.play();
-            } else {
-                if (audioPlayer.paused) {
-                    audioPlayer.play();
-                } else {
-                    audioPlayer.pause();
-                }
+            const songSrc = button.dataset.src;
+
+            if (!songSrc) {
+                alert("Song path missing");
+                return;
             }
-            
-            // Sync up specific visibility flags for play overlays
-            playOverElements.forEach((over, i) => {
-                if (i === index) {
-                    over.style.opacity = audioPlayer.paused ? "0" : "1";
-                } else {
-                    over.style.opacity = "0";
-                }
-            });
+
+            // Set song source
+            audioPlayer.src = songSrc;
+
+            // Show audio controls
+            audioPlayer.style.display = "block";
+
+            try {
+                // Play song
+                await audioPlayer.play();
+
+                // Update play overlays
+                playOverElements.forEach((over, i) => {
+                    over.style.opacity = i === index ? "1" : "0";
+                });
+
+            } catch (error) {
+                console.log("Audio Error:", error);
+                alert("Song not found or browser blocked audio.");
+            }
+        });
+    });
+
+    // Reset overlays when song ends
+    audioPlayer.addEventListener("ended", () => {
+        playOverElements.forEach((over) => {
+            over.style.opacity = "0";
         });
     });
 });
