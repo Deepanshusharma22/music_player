@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="Rspotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="navigationBar">
+        <img src="images/download.png" class="navLogo" alt="Logo">
+        <div class="option">
+            <ul>
+                <li>
+                    <div class="home">
+                        <button><i class="fa-solid fa-house" style="color: #dee2e7;"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <div class="search">
+                        <div class="search_bar">
+                            <button><i class="fa-solid fa-magnifying-glass" style="color: #f3f4f7;"></i></button>
+                            <input placeholder="what do you want to play?" />
+                            <button><ion-icon name="browsers-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="otherOption">
+            <ul>
+                <li>
+                    <div class="otherOption1">
+                        <button>Premium</button>
+                        <button>Support</button>
+                        <button>Download</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="otherOption2">
+                        <button class="installAppBtn"><ion-icon name="arrow-down-circle-outline"></ion-icon> Install app</button>
+                        <button>Sign up</button>
+                        <button id="login">Log in</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero_section">
+        <div class="leftPannel">
+            <div class="top">
+                <p>Your Library</p>
+                <button>
+                    <h2>+</h2>
+                </button>
+            </div>
+            <div class="mid">
+                <div class="midContent">
+                    <p>Create your first playlist</p>
+                    <p>It's Easy We will Help You</p>
+                    <br>
+                    <button>Create playlist</button>
+                </div>
+                <div class="midContent">
+                    <p>Lets find some podcast to follow</p>
+                    <p>we'll keep you update on new episodes</p>
+                    <br>
+                    <button>Browse Podcast</button>
+                </div>
+            </div>
+            <div class="end">
+                <div class="endContent">
+                    <a href="">Legal</a>
+                    <a href="">Safety&PrivacyCenter</a>
+                    <a href=""> PrivacyPolicy</a>
+                    <a href=""> Cookies</a>
+                </div>
+                <div class="endContent">
+                    <a href="">Cookies</a>
+                    <a href="">About Ads</a>
+                    <a href=""> Accessibility</a>
+                </div>
+                <p class="underline">Cookies</p>
+                <br>
+                <button><ion-icon name="globe-outline"></ion-icon> English</button>
+            </div>
+        </div>
+
+        <div class="RightPannel">
+            <div class="writingSection">
+                <button class="underline">Trending songs</button>
+                <button class="underline">show all</button>
+            </div>
+            <div class="song">
+                <div class="backgroundColor">
+                    <div class="box">
+                        <button class="imageButton" data-src="Songs/Ek Ladki Bheegi Bhagi Si Chalti Ka Naam Gaadi 128 Kbps.mp3">
+                            <img src="images/ek ladki.jpg" alt="Song">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Ek Ladki bheegi bhagi si</a>
+                        <br>
+                        <a class="artistName underline">kishore Kumar</a>
+                    </div>
+                </div>
+                <div class="backgroundColor">
+                    <div class="box">
+                        <button class="imageButton" data-src="Songs/128-Likhe Jo Khat Tujhe - Kanyadaan 128 Kbps.mp3">
+                            <img src="images/likhe jo khat tujhe.jpg" alt="Song">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Likhe Jo khat Tujhe</a>
+                        <br>
+                        <a class="artistName underline">Mohammed Rafi</a>
+                    </div>
+                </div>
+                <div class="backgroundColor">
+                    <div class="box">
+                        <button class="imageButton" data-src="Songs/128-Hothon Se Chhu Lo Tum (From Prem Geet) - Prem Geet 128 Kbps.mp3">
+                            <img src="images/hotto se chulo.jpg" alt="Song">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Hotto se Chhoo Tum</a>
+                        <br> 
+                        <a class="artistName underline">Jagjit Singh</a>
+                    </div>
+                </div>
+                <div class="backgroundColor">
+                    <div class="box">
+                        <button class="imageButton" data-src="Songs/128-Lag Ja Gale Se Phir - Woh Kaun Thi  (1964) 128 Kbps.mp3">
+                            <img src="images/lag ja gale.png" alt="Song">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Lag Ja Gale Se</a>
+                        <br>
+                        <a class="artistName underline">Lata Mangeshkar</a>
+                    </div>
+                </div>
+                <div class="backgroundColor">
+                    <div class="box">
+                        <button class="imageButton" data-src="Songs/128-Barso Re - Guru 128 Kbps.mp3">
+                            <img src="images/barso re.jpg" alt="Song">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Barso Re</a>
+                        <br>
+                        <a class="artistName underline">Shreya Ghosal</a>
+                    </div>
+                </div>
+                <div class="backgroundColor">
+                    <div class="box">
+                        <button class="imageButton" data-src="Songs/128-Main Agar Kahoon - Om Shanti Om 128 Kbps.mp3">
+                            <img src="images/om shanti om.jpg" alt="Song">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Me Agar Kahoon</a>
+                        <br>
+                        <a class="artistName underline">Sonu Nigam</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="singer">
+                <div class="writingSection">
+                    <button class="underline">Favourite Singers</button>
+                    <button class="underline">show all</button>
+                </div>
+                <div class="singerImage">
+                    <div class="box">
+                        <button class="artistImageButton"><img src="images/sonu nigam.jpg" alt="Artist">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Sonu Nigam</a>
+                        <br>
+                        <a class="artistName underline">Artist</a>
+                    </div>
+                    <div class="box">
+                        <button class="artistImageButton"><img src="images/Lata.jpg" alt="Artist">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Lata Mangeshkar</a>
+                        <br>
+                        <a class="artistName underline">Artist</a>
+                    </div>
+                    <div class="box">
+                        <button class="artistImageButton"><img src="images/md rafi.png" alt="Artist">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Mohammed Rafi</a>
+                        <br>
+                        <a class="artistName underline">Artist</a>
+                    </div>
+                    <div class="box">
+                        <button class="artistImageButton"><img src="images/Kishore.jpg" alt="Artist">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Kishore Kumar</a>
+                        <br>
+                        <a class="artistName underline">Artist</a>
+                    </div>
+                    <div class="box">
+                        <button class="artistImageButton"><img src="images/shreya.png" alt="Artist">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Shreya Ghosal</a>
+                        <br>
+                        <a class="artistName underline">Artist</a>
+                    </div>
+                    <div class="box">
+                        <button class="artistImageButton"><img src="images/Jagjit.jpg" alt="Artist">
+                            <div class="playOver">
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </button>
+                        <br>
+                        <a class="songName underline">Jagjit Singh</a>
+                        <br>
+                        <a class="artistName underline">Artist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" controls style="display: none;"></audio>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Rspotify.js"></script>
+</body>
+
+</html>

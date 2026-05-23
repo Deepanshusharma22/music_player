@@ -1,0 +1,406 @@
+* {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box; /* Prevents padding breaking sizes */
+}
+.navigationBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(216, 213, 213);
+    padding: 10px;
+}
+.navLogo {
+    width: 50px;
+    height: auto;
+}
+.search_bar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 450px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.home i {
+    background-color: rgb(33, 33, 33);
+    border-radius: 50%;
+    padding: 10px;
+}
+li {
+    list-style: none;
+    padding: 10px;
+}
+.search_bar ion-icon {
+    font-size: 20px;
+    background-color: rgb(33, 33, 33);
+}
+i {
+    font-size: 20px;
+}
+.search_bar i {
+    background-color: rgb(33, 33, 33);
+}
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    border: rgb(33, 33, 33) solid 0.5px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.option button {
+    background-color: rgb(33, 33, 33);
+    color: rgb(177, 176, 176);
+    border-style: none;
+}
+.home button {
+    border-radius: 50%;
+}
+.otherOption1 {
+    margin-left: 60px;
+}
+.otherOption button {
+    color: rgb(177, 176, 176);
+    border-style: none;
+    font-size: 18px;
+}
+.option button:hover i {
+    color: white;
+    cursor: pointer;
+}
+.otherOption button:hover {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#login {
+    color: black;
+    background-color: white;
+    padding: 15px;
+    padding-inline: 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: medium;
+}
+#login:hover {
+    color: black;
+}
+.otherOption ion-icon {
+    background-color: black;
+    font-size: 18px;
+}
+.otherOption1 {
+    padding-inline: 5px;
+}
+.otherOption1 button {
+    margin-inline: -4px;
+}
+.search:hover .search_bar {
+    border: 0.5px white solid;
+}
+.search_bar button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.search_bar:hover input,
+.search_bar:hover i,
+.search_bar:hover ion-icon {
+    color: white;
+}
+.search_bar:hover input::placeholder {
+    color: white;
+}
+.search i,
+.search ion-icon {
+    background: transparent; 
+}
+.home button:hover i {
+    border: 0.5px solid rgb(153, 151, 151);
+}
+.hero_section {
+    display: flex;
+}
+.leftPannel {
+    color: white;
+    width: 30vw;
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+.top p {
+    font-size: 20px;
+}
+.top button {
+    color: rgb(201, 200, 200);
+    background-color: transparent;
+    border-radius: 50%;
+    font-weight: 500;
+    border-style: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.top button:hover {
+    color: white;
+    cursor: pointer;
+    border: 0.5px white solid;
+}
+.mid {
+    max-height: 300px;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.midContent {
+    scroll-snap-align: start;
+    width: 25vw;
+    height: fit-content;
+    background-color: rgb(33, 33, 33);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.mid::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+.mid::-webkit-scrollbar-track {
+    background: transparent;
+}
+.mid::-webkit-scrollbar-thumb {
+    background-color: rgb(159, 158, 158);
+}
+.midContent p {
+    background-color: rgb(33, 33, 33);
+    padding-left: 20px;
+}
+.midContent button {
+    transform: scale(1.2);
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    padding-inline: 10px;
+    font-weight: 700;
+    margin-left: 25px;
+    border: none;
+}
+.midContent button:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+.end {
+    margin-left: 20px;
+}
+.end button {
+    align-items: center;
+    padding-inline: 10px;
+    color: white;
+    background: transparent;
+    border: white 0.5px solid;
+    border-radius: 30px;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+.end button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+a {
+    color: rgb(177, 176, 176);
+    text-decoration: none;
+    padding-inline: 5px;
+    font-size: 15px;
+}
+.midContent :first-child {
+    font-weight: 700;
+    font-size: 20px;
+}
+.underline:hover {
+    cursor: pointer;
+    text-decoration: underline white solid;
+}
+.RightPannel {
+    width: 70vw;
+    padding-inline: 20px;
+}
+.writingSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.writingSection button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(177, 176, 176);
+}
+.writingSection :first-child {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+.backgroundColor :hover {
+    background-color: rgb(56, 55, 55);
+}
+.box {
+    margin-left: 20px;
+    margin-top: 20px;
+    border: transparent;
+    width: 151px;
+}
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.songName {
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+.artistName {
+    background: transparent;
+    color: rgb(177, 176, 176);
+    font-size: 14px;
+}
+.song {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrap for medium screen scaling */
+}
+.imageButton {
+    position: relative;
+    border-style: none;
+    padding: 0;
+    background: transparent;
+}
+.imageButton:hover {
+    cursor: pointer;
+}
+.playOver {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(30, 215, 96);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+.playOver:hover {
+    background-color: rgb(87, 227, 136);
+}
+.playOver ion-icon {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+}
+.imageButton:hover .playOver {
+    opacity: 1;
+}
+.singer {
+    margin-top: 40px;
+}
+.singerImage {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.artistImageButton img {
+    border-radius: 50%;
+}
+.artistImageButton {
+    position: relative;
+    border-style: none;
+    padding: 0;
+    background: transparent;
+}
+.artistImageButton:hover .playOver {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES (Does not alter laptop styles)
+   ========================================================================== */
+
+/* Tablet & Mobile Layout Structure Adjustments */
+@media screen and (max-width: 1024px) {
+    .navigationBar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .search_bar input {
+        width: 250px; /* Reduces search size gracefully on small screens */
+    }
+    .otherOption1 {
+        margin-left: 10px;
+    }
+    .hero_section {
+        flex-direction: column; /* Stacks panels vertically */
+    }
+    .leftPannel {
+        width: 100vw;
+        margin-bottom: 30px;
+    }
+    .midContent {
+        width: 90vw;
+    }
+    .RightPannel {
+        width: 100vw;
+        padding-inline: 10px;
+    }
+    .song, .singerImage {
+        justify-content: center;
+    }
+}
+
+/* Specific Small Mobile Screen Tweaks */
+@media screen and (max-width: 600px) {
+    .navigationBar {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .option ul, .otherOption ul {
+        justify-content: center;
+        width: 100%;
+    }
+    .search_bar input {
+        width: 180px;
+    }
+    /* Hides lower tier links on narrow viewports to keep UI tight */
+    .otherOption1 button:not(:last-child), 
+    .installAppBtn {
+        display: none;
+    }
+    .song, .singerImage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row instead of breaking out */
+        justify-items: center;
+        gap: 15px;
+    }
+    .box {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 140px;
+    }
+}
